@@ -5,6 +5,8 @@ from sqlalchemy import text
 import pandas as pd
 
 
+# finns mer på ..
+# https://github.com/Ludwilton/db_labb2_LUDWIG_CARLEGRUND/tree/main
 
 def connect_to_server():
     server_name = "localhost"
@@ -59,5 +61,9 @@ def search_books(engine, search_term):
     except Exception as e:
         print(f"Fel vid sökning: {e}")
         return pd.DataFrame()
+    
+
+
+# commit test..
 
 
